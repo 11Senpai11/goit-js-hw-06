@@ -9,6 +9,7 @@ const widgetColor = document.querySelector(".color");
 const widgetChangeColor = document.querySelector(".change-color");
 
 widgetChangeColor.addEventListener("click", () => {
-  body.style.backgroundColor = getRandomHexColor();
-  widgetColor.textContent = getRandomHexColor();
+  const randomHexColor = getRandomHexColor();
+  body.style.backgroundColor = randomHexColor;
+  widgetColor.textContent = randomHexColor;
 });
